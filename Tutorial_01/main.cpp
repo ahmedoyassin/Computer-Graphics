@@ -1,6 +1,8 @@
 #include <iostream>
-
+#include "Window.h"
 int main() {
-	std::cout << "Hello, World!" << std::endl;
+	Window* window = new Window(800, 600);
+	window->mainLoop();
+	delete window;
 	return 0;
 }
